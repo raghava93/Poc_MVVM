@@ -24,8 +24,6 @@
 		A036AF6327748358008D6206 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A036AF6127748358008D6206 /* ProductCell.xib */; };
 		A036AF6727749F8B008D6206 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036AF6627749F8B008D6206 /* ImageExtension.swift */; };
 		A036AF6C2774AD24008D6206 /* ViewController+AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036AF6B2774AD24008D6206 /* ViewController+AlertController.swift */; };
-		A036AF722774B60C008D6206 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036AF712774B60C008D6206 /* ProductViewModel.swift */; };
-		A036AFA22774E07E008D6206 /* Shopping App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A036AFA02774E07E008D6206 /* Shopping App.xcdatamodeld */; };
 		A036AFE227762327008D6206 /* ProductRating+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036AFDE27762327008D6206 /* ProductRating+CoreDataClass.swift */; };
 		A036AFE327762327008D6206 /* ProductRating+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036AFDF27762327008D6206 /* ProductRating+CoreDataProperties.swift */; };
 		A036AFE427762327008D6206 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036AFE027762327008D6206 /* Product+CoreDataClass.swift */; };
@@ -54,8 +52,6 @@
 		A036AF6127748358008D6206 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		A036AF6627749F8B008D6206 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		A036AF6B2774AD24008D6206 /* ViewController+AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+AlertController.swift"; sourceTree = "<group>"; };
-		A036AF712774B60C008D6206 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
-		A036AFA12774E07E008D6206 /* Shopping App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Shopping App.xcdatamodel"; sourceTree = "<group>"; };
 		A036AFDE27762327008D6206 /* ProductRating+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductRating+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		A036AFDF27762327008D6206 /* ProductRating+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductRating+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		A036AFE027762327008D6206 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
@@ -81,7 +77,6 @@
 		A036AF14277363D4008D6206 = {
 			isa = PBXGroup;
 			children = (
-				A036AFA02774E07E008D6206 /* Shopping App.xcdatamodeld */,
 				A036AF742774B729008D6206 /* Shopping AppTests */,
 				A036AF1F277363D5008D6206 /* Shopping App */,
 				A036AF1E277363D5008D6206 /* Products */,
@@ -149,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				A036AF3F277365E5008D6206 /* HomeViewModel.swift */,
-				A036AF712774B60C008D6206 /* ProductViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -356,11 +350,9 @@
 				A036AF25277363D5008D6206 /* HomeViewController.swift in Sources */,
 				A036AF21277363D5008D6206 /* AppDelegate.swift in Sources */,
 				A036AF23277363D5008D6206 /* SceneDelegate.swift in Sources */,
-				A036AF722774B60C008D6206 /* ProductViewModel.swift in Sources */,
 				A036AFE527762327008D6206 /* Product+CoreDataProperties.swift in Sources */,
 				A036AF40277365E5008D6206 /* HomeViewModel.swift in Sources */,
 				A036AF502774614D008D6206 /* ProductViewController.swift in Sources */,
-				A036AFA22774E07E008D6206 /* Shopping App.xcdatamodeld in Sources */,
 				A036AF6227748358008D6206 /* ProductCell.swift in Sources */,
 				A036AFE427762327008D6206 /* Product+CoreDataClass.swift in Sources */,
 				A036AF4927740733008D6206 /* Urls.swift in Sources */,
@@ -571,19 +563,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		A036AFA02774E07E008D6206 /* Shopping App.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A036AFA12774E07E008D6206 /* Shopping App.xcdatamodel */,
-			);
-			currentVersion = A036AFA12774E07E008D6206 /* Shopping App.xcdatamodel */;
-			path = "Shopping App.xcdatamodeld";
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = A036AF15277363D4008D6206 /* Project object */;
 }

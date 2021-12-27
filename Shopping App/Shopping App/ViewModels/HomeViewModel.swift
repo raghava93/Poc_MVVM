@@ -12,12 +12,13 @@ class HomeViewModel{
     
     var productsList:[ProductElement]? = nil
     var networkManager:NetworkManager?
-    var productDetails:ProductViewModel?
+    
+//    callbacks for handling UI
     var showError: (()->())?
     var showLoading: (()->())?
     var hideLoading: (()->())?
     
-    
+//    initialiser with network manager as dependency
     init(_networkManager:NetworkManager) {
         networkManager = _networkManager
     }
@@ -66,21 +67,11 @@ class HomeViewModel{
                             
                             DispatchQueue.main.async {
                                 
-                                
-//                                backgroundQueue.async {
-                                    if (dbList != self?.productsList){
-                                        print("need to save to DB")
-                                        //                                    autoreleasepool {
-                                        
-                                        ProductDBManager.saveProducts(model: model)
-                                        
-                                        //                                    }
-                                        
-                                    }else{
-                                        debugPrint("already same data exists")
-                                    }
-//                                } //background thread
-                                
+                                if (dbList != self?.productsList){
+                                    ProductDBManager.saveProducts(model: model)
+                                }else{
+                                    debugPrint("already same data exists")
+                                }
                             } // main thread
                         } catch (let fail) {
                             debugPrint("failed model \(fail.localizedDescription)")
